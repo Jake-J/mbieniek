@@ -1,0 +1,36 @@
+.contact {
+    height: calc(100vh - 90px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.content-wrap {
+    position: relative;
+    top: -45px;
+}
+
+.contact-top {
+    font-size: 54px;
+    color: #000;
+    text-align: center;
+    font-family: bebasBold;
+    letter-spacing: 3px;
+    margin-bottom: 16px;
+}
+
+.contact-center {
+    font-size: 14px;
+    text-align: center;
+    color: #CCCCCC;
+    font-family: proxima-nova, sans-serif;
+    margin-bottom: 26px;
+}
+
+.contact-bottom {
+    font-size: 26px;
+    color: #000;
+    text-align: center;
+    font-family: bebasBold;
+}

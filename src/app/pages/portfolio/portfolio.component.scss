@@ -1,0 +1,26 @@
+.project-image {
+    max-width: 100%;
+    margin-bottom: 16px;
+}
+
+.portfolio-project {
+    width: 100%;
+    height: calc(100vh);
+    background-size: cover; 
+    display: flex;
+    align-items: center;
+    padding-left: 174px;
+    color: #fff;
+    margin-bottom: 16px;
+}
+
+.project-title {
+    font-family: BebasBold;
+    font-size: 43px;
+    margin-bottom: 4px;
+}
+
+.project-subtitle {
+    font-family: BebasBold;
+    font-size: 15px;
+}
