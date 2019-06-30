@@ -2,7 +2,8 @@
   <a *ngFor="let project of projectsToDisplay" 
       class="portfolio-project" 
       [ngStyle]="{ 'background-image': 'url(' + project.imagePath + ')'}"
-      [routerLink]="[project.id]">
+      [routerLink]="[project.id]"
+      @projects >
     <div>
       <h2 class="project-title">SAMPLE PROJECT TITLE</h2>
       <h3 class="project-subtitle">SAMPLE PROJECT SUBTITLE</h3>

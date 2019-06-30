@@ -1,5 +1,6 @@
 import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
+import { TooltipModule } from 'ng2-tooltip-directive';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -8,8 +9,8 @@ import { ContactComponent } from './pages/contact/contact.component';
 import { HeaderComponent } from './components/header/header.component';
 import { LoadingSpinnerComponent } from './components/loading-spinner/loading-spinner.component';
 import { ProjectComponent } from './pages/project/project.component';
-import { TooltipComponent } from './components/tooltip/tooltip.component';
-import { TooltipDirective } from './components/tooltip.directive';
+import {ClipboardModule} from 'ngx-clipboard';
+import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 
 @NgModule({
   declarations: [
@@ -19,12 +20,13 @@ import { TooltipDirective } from './components/tooltip.directive';
     HeaderComponent,
     LoadingSpinnerComponent,
     ProjectComponent,
-    TooltipComponent,
-    TooltipDirective
   ],
   imports: [
     BrowserModule,
-    AppRoutingModule
+    AppRoutingModule,
+    TooltipModule,
+    ClipboardModule,
+    BrowserAnimationsModule
   ],
   providers: [],
   bootstrap: [AppComponent]

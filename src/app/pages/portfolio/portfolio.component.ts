@@ -1,19 +1,28 @@
 import { Component, OnInit, HostListener } from '@angular/core';
+import {animate, style, transition, trigger} from '@angular/animations';
 
 @Component({
   selector: 'app-portfolio',
   templateUrl: './portfolio.component.html',
-  styleUrls: ['./portfolio.component.scss']
+  styleUrls: ['./portfolio.component.scss'],
+  animations: [
+    trigger('projects', [
+      transition(':enter', [
+        style({ transform: 'scale(0.5)', opacity: 0 }),  // initial
+        animate('1s cubic-bezier(.8, -0.6, 0.2, 1.5)',
+          style({ transform: 'scale(1)', opacity: 1 }))  // final
+      ])
+    ])
+  ]
 })
 export class PortfolioComponent implements OnInit {
 
-  @HostListener("window:scroll", [])
+  @HostListener('window:scroll', [])
   onScroll(): void {
   if ((window.innerHeight + window.scrollY) >= document.body.offsetHeight) {
           if (this.allProjects.length) {
             this.projectsToDisplay.push(this.allProjects.shift());
           }
-          console.log(this.allProjects);
       }
   }
 
