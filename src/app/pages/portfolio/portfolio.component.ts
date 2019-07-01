@@ -28,9 +28,9 @@ export class PortfolioComponent implements OnInit {
 
   projectsToDisplay = [{id: 1, imagePath: '../../../assets/images/pi1.jpg'}];
   allProjects = [
-    {id: 2, imagePath: '../../../assets/images/pi2.jpg'},
-    {id: 3, imagePath: '../../../assets/images/pi3.jpg'},
-    {id: 4, imagePath: '../../../assets/images/pi4.jpg'}
+    {id: 2, imagePath: 'assets/images/pi2.jpg'},
+    {id: 3, imagePath: 'assets/images/pi3.jpg'},
+    {id: 4, imagePath: 'assets/images/pi4.jpg'}
   ];
 
   constructor() { }
